@@ -60,6 +60,8 @@
         <div class="mouth"></div>
     </div>
 
+    <img src="pacman-ghost-red.png" id="ghost">
+
 
     </div>
 
@@ -79,7 +81,20 @@
                 let rot = (radian * (180 / Math.PI) * -1) - 95;
                 face.style.transform = "rotate(" + rot + "deg)";
             })
+
+
+            var go = document.getElementById("ghost");
+            go.style.left = (event.pageX -20 )+ "px" 
+            go.style.top = (event.pageY -20 )+ "px" 
+
         }
+
+
+
+        
+
+
+
     </script>
     
 </body>
